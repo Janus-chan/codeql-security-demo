@@ -2,9 +2,9 @@ name: "CodeQL Security Analysis"
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
   schedule:
     - cron: '23 5 * * 1'  # Weekly scan on Mondays
 
