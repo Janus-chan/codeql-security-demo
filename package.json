@@ -1,0 +1,32 @@
+{
+  "name": "secure-demo-app",
+  "version": "1.0.0",
+  "description": "Secure demo app with fixed vulnerabilities",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "prod": "NODE_ENV=production node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "security-audit": "npm audit",
+    "security-fix": "npm audit fix"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "bcrypt": "^5.1.1",
+    "validator": "^13.11.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": ["demo", "security", "secure", "express", "nodejs"],
+  "author": "Security Demo",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
