@@ -1,0 +1,9 @@
+# Assign all JS files to the security lead
+*.js @security-lead
+
+
+#default reviewers/codeowners
+*@janus-chan @Jain9384
+
+# Or assign by folder
+/src/security/ @janus-team
